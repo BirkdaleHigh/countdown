@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countdown</title>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/d3/build/d3.min.js"></script>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="display">
+        <h1 v-if="next">{{next.Title}} {{next.Date | timeTo}}</h1>
+        <h1 v-else>Don't Panic</h1>
+        <div class="countdown">
+            <div>
+                <p>{{count.days | two_digits}}</p>
+                <p>Days</p>
+            </div>
+            <div>
+                <p>{{count.hours | two_digits}}</p>
+                <p>Hours</p>
+            </div>
+            <div>
+                <p>{{count.minutes | two_digits}}</p>
+                <p>Minutes</p>
+            </div>
+            <div>
+                <p>{{count.seconds | two_digits}}</p>
+                <p>Seconds</p>
+            </div>
+        <h3></h3>
+    </section>
+    <section id="list">
+        <ol>
+            <li v-for="e in exam"></li>
+        </ol>
+    </section>
+
+    <script>
+        var display = new Vue({
+            el: '#display',
+            data: {
+                now: new Date,
+                exam: []
+            },
+            mounted: function(){
+                var self = this
+                window.setInterval(function(){
+                    self.now = new Date
+                }, 1000)
+            },
+            computed: {
+                next: function(){
+                    return this.exam.sort(function(a, b){
+                        return a.Date.isAfter(b.Date) ? 1 : -1
+                    })[0]
+                },
+                count: function(){
+                    if(this.next){
+                        var time = moment.duration(this.next.Date.diff(this.now))
+                        return {hours: time.hours(), days: time.days(), minutes: time.minutes(), seconds: time.seconds()}
+                    } else {
+                        return {hours: 0, days: 0, minutes: 0, seconds: 0}
+                    }
+                }
+            },
+            filters:{
+                timeTo: function(date){
+                    return moment(new Date).to(date)
+                },
+                two_digits: function (value) { if (value.toString().length <= 1) { return "0" + value.toString(); } return value.toString(); }
+            }
+        })
+        d3.csv('data/sample.csv', function (data) {
+            display.exam = data.map(function(row){
+                row.Date = moment(row.Date, "ddd DD MMM")
+                return row
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "countdown",
+  "version": "0.1.0",
+  "description": "Client side application to display a countdown to the next exam in the data list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jack Bennett <jbennett@birkdalehigh.co.uk>",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^4.7.3",
+    "moment": "^2.17.1",
+    "vue": "^2.2.4"
+  }
+}

@@ -1,3 +1,44 @@
+body{
+    background: #484D6D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#display{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:3vh;
+    color: #49D49D;
+}
+#display h1{
+    color: #08B2E3;
+}
+#display .number{
+    color: #EE6352;
+    font-size: 8vh;
+}
+#display .countdown{
+    width: 80%;
+}
+
+#list{
+    width: 60vw;
+    margin: 0 auto;
+    overflow: auto;
+    background: #EFE9F4;
+    color: #1a1b25;
+    box-shadow: 0 0 80px #0f0f0f
+}
+table{
+    width:100%;
+    padding: 2vw;
+}
+table tr:hover{
+    background: #49D49D;
+}
+
 .countdown{
     display:flex;
     align-items: center;

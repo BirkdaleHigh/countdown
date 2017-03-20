@@ -11,37 +11,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="app">
     <section id="display">
-        <h1 v-if="next">{{next.Title}} {{next.Date | timeTo}}</h1>
+        <h1 v-if="next">{{next.Title}}</h1>
         <h1 v-else>Don't Panic</h1>
         <div class="countdown">
             <div>
-                <p>{{count.days | two_digits}}</p>
+                <p class=number>{{count.days | two_digits}}</p>
                 <p>Days</p>
             </div>
             <div>
-                <p>{{count.hours | two_digits}}</p>
+                <p class=number>{{count.hours | two_digits}}</p>
                 <p>Hours</p>
             </div>
             <div>
-                <p>{{count.minutes | two_digits}}</p>
+                <p class=number>{{count.minutes | two_digits}}</p>
                 <p>Minutes</p>
             </div>
             <div>
-                <p>{{count.seconds | two_digits}}</p>
+                <p class=number>{{count.seconds | two_digits}}</p>
                 <p>Seconds</p>
             </div>
-        <h3></h3>
     </section>
     <section id="list">
-        <ol>
-            <li v-for="e in exam"></li>
-        </ol>
+        <table>
+            <template v-for="e in exam">
+                <tr>
+                    <td>{{e.Title}}</td>
+                    <td>{{e.Date.format("dddd Do MMMM YYYY")}}</td>
+                    <td>Start Time</td>
+                </tr>
+            </template>
+        </table>
     </section>
+    </div>
 
     <script>
         var display = new Vue({
-            el: '#display',
+            el: '#app',
             data: {
                 now: new Date,
                 exam: []
@@ -74,7 +81,7 @@
                 two_digits: function (value) { if (value.toString().length <= 1) { return "0" + value.toString(); } return value.toString(); }
             }
         })
-        d3.csv('data/sample.csv', function (data) {
+        d3.csv('data/exam.csv', function (data) {
             display.exam = data.map(function(row){
                 row.Date = moment(row.Date, "ddd DD MMM")
                 return row

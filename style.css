@@ -8,11 +8,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size:3vh;
     color: #49D49D;
 }
 #display h1{
+    margin-top: 15vh;
     color: #08B2E3;
 }
 #display .number{
@@ -23,9 +24,13 @@ body{
     width: 80%;
 }
 
+.fade{
+    opacity: .5;
+}
+
 #list{
     width: 80vw;
-    margin: 0 auto;
+    margin: 1vh auto 5vh;
     overflow: auto;
     background: #EFE9F4;
     color: #1a1b25;

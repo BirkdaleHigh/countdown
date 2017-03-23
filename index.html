@@ -42,7 +42,7 @@
     <section id="list">
         <table>
             <template v-for="e in exam">
-                <tr v-on:click="choose">
+                <tr v-on:click="choose" v-bind:class="{chosen: chosen === e}">
                     <td>{{e.Title}}</td>
                     <td>{{e.Date.format("dddd Do MMMM YYYY hh:mm a")}}</td>
                 </tr>
@@ -82,7 +82,7 @@
                 choose: function (e){
                     res = this.exam.filter(function(entry){
                         if(entry.Title.replace(/\s/g,"") === e.target.innerText.replace(/\s/g,"")
-                        || moment(e.target.innerText, "dddd Do MMMM YYYY hh:mm a").isSame(entry.Date)){
+                           || moment(e.target.innerText, "dddd Do MMMM YYYY hh:mm a").isSame(entry.Date)){
                             return entry
                         }
                     })

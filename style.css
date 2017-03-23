@@ -40,8 +40,11 @@ table{
     width:100%;
     padding: 2vw;
 }
-table tr:hover{
+tr:hover{
     background: #49D49D;
+}
+tr.chosen{
+    background: #EE6352;
 }
 
 .countdown{

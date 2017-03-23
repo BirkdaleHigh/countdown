@@ -13,7 +13,7 @@
 <body>
     <div id="app">
     <section id="display">
-        <h1 v-if="next">{{next.Title}}</h1>
+        <h1 v-if="chosen">{{chosen.Title}}</h1>
         <h1 v-else>Don't Panic</h1>
         <div class="countdown">
             <div>
@@ -36,7 +36,7 @@
     <section id="list">
         <table>
             <template v-for="e in exam">
-                <tr>
+                <tr v-on:click="choose">
                     <td>{{e.Title}}</td>
                     <td>{{e.Date.format("dddd Do MMMM YYYY")}}</td>
                     <td>Start Time</td>
@@ -51,7 +51,9 @@
             el: '#app',
             data: {
                 now: new Date,
-                exam: []
+                chosen: false,
+                exam: [],
+                count: {days: 0, hours: 0, minutes: 0, seconds: 0}
             },
             mounted: function(){
                 var self = this
@@ -59,19 +61,33 @@
                     self.now = new Date
                 }, 1000)
             },
-            computed: {
-                next: function(){
-                    return this.exam.sort(function(a, b){
-                        return a.Date.isAfter(b.Date) ? 1 : -1
-                    })[0]
+            watch: {
+                chosen: function(){
+                    this.tick()
                 },
-                count: function(){
-                    if(this.next){
-                        var time = moment.duration(this.next.Date.diff(this.now))
-                        return {hours: time.hours(), days: time.days(), minutes: time.minutes(), seconds: time.seconds()}
-                    } else {
-                        return {hours: 0, days: 0, minutes: 0, seconds: 0}
+                now: function(){
+                    this.tick()
+                },
+                exam: function(){
+                    this.chosen = this.exam[0]
+                }
+            },
+            methods: {
+                latest: function () { if(this.exam[0]){ this.chosen = this.exam[0] } },
+                choose: function (e){
+                    res = this.exam.filter(function(entry){
+                        if(entry.Title.replace(/\s/g,"") === e.target.innerText.replace(/\s/g,"")
+                        || moment(e.target.innerText, "ddd DD MMM").isSame(entry.Date)){
+                            return entry
+                        }
+                    })
+                    if(res[0]){
+                        this.chosen = res[0]
                     }
+                },
+                tick: function(){
+                    var time = moment.duration(this.chosen.Date.diff(this.now))
+                    this.count = {hours: time.hours(), days: time.days(), minutes: time.minutes(), seconds: time.seconds()}
                 }
             },
             filters:{
@@ -85,6 +101,8 @@
             display.exam = data.map(function(row){
                 row.Date = moment(row.Date, "ddd DD MMM")
                 return row
+            }).sort(function (a, b) {
+                return a.Date.isAfter(b.Date) ? 1 : -1
             })
         })
     </script>

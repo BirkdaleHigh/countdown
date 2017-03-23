@@ -92,7 +92,7 @@
                 },
                 tick: function(){
                     var time = moment.duration(this.chosen.Date.diff(this.now))
-                    this.count = {days: Math.round(time.asDays()), hours: time.hours(), minutes: time.minutes(), seconds: time.seconds()}
+                    this.count = {days: Math.floor(time.asDays()), hours: time.hours(), minutes: time.minutes(), seconds: time.seconds()}
                 }
             },
             filters:{

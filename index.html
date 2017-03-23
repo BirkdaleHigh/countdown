@@ -41,12 +41,12 @@
     </section>
     <section id="list">
         <table>
-            <template v-for="e in exam">
+            <tbody v-for="e in exam">
                 <tr v-on:click="choose" v-bind:class="{chosen: chosen === e}">
                     <td>{{e.Title}}</td>
                     <td>{{e.Date.format("dddd Do MMMM YYYY hh:mm a")}}</td>
                 </tr>
-            </template>
+            </tbody>
         </table>
     </section>
     </div>

@@ -43,7 +43,7 @@
     <section id="list">
         <table>
             <tbody>
-                <tr v-for="e in exam" v-on:click="choose" v-bind:class="{chosen: chosen === e}">
+                <tr v-for="e in exam" v-on:click="choose" v-bind:key="e.Title" v-bind:class="{chosen: chosen === e}">
                     <td>{{e.Title}}</td>
                     <td>{{e.Date.format("dddd Do MMMM YYYY hh:mm a")}}</td>
                 </tr>

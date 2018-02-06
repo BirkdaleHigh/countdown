@@ -1,58 +1,76 @@
-Date,Start,Duration,Title
-Mon 15 May,09:00,01:45,RE Unit 1 Religion &  Life Issues
-Tue 16 May,09:00,00:25,French  Unit 1- Listening (F)
-Tue 16 May,09:00,00:35,French Unit 1- Listening  (H)
-Tue 16 May,09:00,00:35,French Unit 3 - Reading (F)
-Tue 16 May,09:00,00:50,French Unit 3 - Reading (H)
-Tue 16 May,13:15,01:00,Biology Unit 1 Tier F
-Tue 16 May,13:15,01:00,Biology Unit 1 Tier H
-Wed 17 May,09:00,01:30,ICT Unit 1 Written Paper
-Thu 18 May,09:00,01:00,Chemistry Unit 1 Tier F
-Thu 18 May,09:00,01:00,Chemistry Unit 1 Tier H
-Thu 18 May,13:15,01:30,Drama Unit 1
-Fri 19 May,09:00,00:25,Spanish Unit 1 -  Listening (F)
-Fri 19 May,09:00,00:35,Spanish Unit 1 -  Listening (H)
-Fri 19 May,09:00,00:35,Spanish Unit 3 - Reading (F)
-Fri 19 May,09:00,00:50,Spanish Unit 3 - Reading (H)
-Fri 19 May,13:15,01:30,Physical Education Unit 1
-Mon 22 May,09:00,01:45,English Literature Paper 1
-Mon 22 May,13:15,01:30,Geography A Unit 1 Tier F
-Mon 22 May,13:15,01:30,Geography A Unit 1 Tier H
-Wed 24 May,09:00,00:45,Business Studies Unit 1 - Intro.to Small Business
-Wed 24 May,13:15,01:00,Physics Unit 1 Tier F
-Wed 24 May,13:15,01:00,Physics Unit 1 Tier H
-Thu 25 May,09:00,01:30,Maths Paper 1 Non Calculator (F)
-Thu 25 May,09:00,01:30,Maths Paper 1 Non Calculator (H)
-Thu 25 May,13:15,01:30,ICT Unit 3 Written Paper
-Fri 26 May,09:00,02:15,English Literature Paper 2
-Mon 05 Jun,09:00,02:00,Hist B: Aspects of International Relations
-Tue 06 Jun,09:00,01:45,English Language Paper 1
-Tue 06 Jun,13:15,01:30,Geography A Unit 2 Tier F
-Tue 06 Jun,13:15,01:30,Geography A Unit 2 Tier H
-Wed 07 Jun,09:00,01:15,Ancient  Hist:ory Paper 1 The Greeks at War
-Wed 07 Jun,09:00,01:30,Computing: Cmptr Sys & Prgmng Wrttn
-Wed 07 Jun,13:15,01:45,RE Unit 2 Religion & Human Experience
-Thu 08 Jun,09:00,01:30,Maths Paper 2 Calculator (F)
-Thu 08 Jun,09:00,01:30,Maths Paper 2 Calculator (H)
-Fri 09 Jun,09:00,01:00,Biology Unit 2 Tier F
-Fri 09 Jun,09:00,01:00,Biology Unit 2 Tier H
-Fri 09 Jun,09:00,01:00,Biology Unit 3 Tier H
-Fri 09 Jun,13:15,01:00,Music Unit 1
-Fri 09 Jun,13:15,01:30,Business Studies Unit 3 - Building A Business
-Mon 12 Jun,09:00,01:45,English Language Paper 2
-Tue 13 Jun,09:00,01:30,Maths Paper 3 Calculator (F)
-Tue 13 Jun,09:00,01:30,Maths Paper 3 Calculator (H)
-Tue 13 Jun,13:15,01:15,Catering Unit 2 Written Paper
-Wed 14 Jun,09:00,01:00,Chemistry Unit 2 Tier F
-Wed 14 Jun,09:00,01:00,Chemistry Unit 2 Tier H
-Wed 14 Jun,09:00,01:00,Chemistry Unit 3 Tier H
-Wed 14 Jun,13:15,01:30,Hist B: Brt Scty Chngd 1890-1918 Wrtn
-Thu 15 Jun,09:00,01:30,Further Mathematics Paper 1
-Thu 15 Jun,13:15,01:15,Ancient History Paper 2 The Rise of Rome
-Fri 16 Jun,09:00,01:00,Physics Unit 2 Tier F
-Fri 16 Jun,09:00,01:00,Physics Unit 2 Tier H
-Fri 16 Jun,09:00,01:00,Physics Unit 3 Tier H
-Fri 16 Jun,13:15,02:00,Resistant Materials Unit 1
-Mon 19 Jun,09:00,02:00,Further Mathematics Paper 2
-Mon 19 Jun,13:15,01:15,Ancient  History Paper 3 Women in Ancient Politics
-Thu 22 Jun,09:00,02:00,Statistics Written Paper (H)
+Date,Start,Duration,Title,Board,Component Code
+Mon 14 May,9:00 AM,01:30,ICT Unit 1,WJEC,43310001
+Mon 14 May,9:00 AM,01:30,Computer Science Unit 1,OCR,J276/01
+Mon 14 May,1:00 PM,02:00,Religious Studies Full Course Component 1,WJEC,C120U10-1
+Mon 14 May,1:00 PM,01:00,Religious Studies Short Course Component 1,WJEC,C125U10-1
+Tue 15 May,9:00 AM,00:35,French Listening [F],Edexcel,1FR0 1F
+Tue 15 May,9:00 AM,00:45,French Reading [F],Edexcel,1FR0 3F
+Tue 15 May,9:00 AM,00:45,French Listening [H],Edexcel,1FR0 1H
+Tue 15 May,9:00 AM,01:00,French Reading [H],Edexcel,1FR0 3H
+Tue 15 May,1:00 PM,01:45,Biology Paper 1 [F],AQA,8461/1F
+Tue 15 May,1:00 PM,01:45,Biology Paper 1 [H],AQA,8461/1H
+Tue 15 May,1:00 PM,01:15,Combined Science Trilogy Biology Paper 1 [F],AQA,8464/B/1F
+Tue 15 May,1:00 PM,01:15,Combined Science Trilogy Biology Paper 1 [H],AQA,8464/B/1H
+Wed 16 May,9:00 AM,01:00,Physical Education Paper 1,OCR,J587/01
+Wed 16 May,9:00 AM,01:00,Dutch: Writing  Paper,OCR,A804/01
+Wed 16 May,9:00 AM,01:00,Portuguese: Writing  Paper,OCR,A834/01
+Wed 16 May,1:00 PM,01:00,Religious Studies Full Course Component 2,WJEC,C120U20-1
+Wed 16 May,1:00 PM,00:35,Religious Studies Short Course Component 2,WJEC,C125U20-1
+Thu 17 May,9:00 AM,01:45,Chemistry Paper 1 [F],AQA,8462/1F
+Thu 17 May,9:00 AM,01:45,Chemistry Paper 1 [H],AQA,8462/1H
+Thu 17 May,9:00 AM,01:15,Combined Science Trilogy Chemistry Paper 1 [F],AQA,8464/C/1F
+Thu 17 May,9:00 AM,01:15,Combined Science Trilogy Chemistry Paper 1 [H],AQA,8464/C/1H
+Thu 17 May,1:00 PM,01:30,ICT Unit 3,WJEC,43330001
+Thu 17 May,1:00 PM,01:30,Computer Science Unit 2,OCR,J276/02
+Fri 18 May,9:00 AM,01:10,French Writing [F],Edexcel,1FR0 4F
+Fri 18 May,9:00 AM,01:20,French Writing [H],Edexcel,1FR0 4H
+Fri 18 May,1:00 PM,01:45,Drama Written Paper,AQA,8261/W
+Fri 18 May,1:00 PM,01:00,Physical Education Paper 2,OCR,J587/02
+Mon 21 May,9:00 AM,00:50,Portuguese: Listening Paper,OCR,A831/01
+Mon 21 May,1:00 PM,00:50,Dutch: Listening Paper,OCR,A801/01
+Tue 22 May,9:00 AM,01:45,English Literature Paper 1,AQA,8702/1
+Tue 22 May,1:00 PM,01:30,Geography Paper 1,AQA,8035/1
+Wed 23 May,1:00 PM,01:45,Physics Paper 1 [F],AQA,8463/1F
+Wed 23 May,1:00 PM,01:45,Physics Paper 1 [H],AQA,8463/1H
+Wed 23 May,1:00 PM,01:15,Combined Science Trilogy Physics Paper 1 [F],AQA,8464/P/1F
+Wed 23 May,1:00 PM,01:15,Combined Science Trilogy Physics Paper 1 [H],AQA,8464/P/1H
+Thu 24 May,9:00 AM,01:30,Maths Paper 1 Non Calculator [F],Edexcel,1MA1 1F
+Thu 24 May,9:00 AM,01:30,Maths Paper 1 Non Calculator [H],Edexcel,1MA1 1H
+Thu 24 May,1:00 PM,01:00,Religious Studies Full Course Component 3,WJEC,C120U50-1
+Thu 24 May,1:00 PM,00:35,Religious Studies Short Course Component 3,WJEC,C125U50-1
+Fri 25 May,9:00 AM,02:15,English Literature Paper 2,AQA,8702/2
+Mon 04 Jun,9:00 AM,01:15,History Paper 1,Edexcel,1HI0 10
+Tue 05 Jun,9:00 AM,01:45,English Language Paper 1,AQA,8700/1
+Tue 05 Jun,1:00 PM,01:30,Geography Paper 2,AQA,8035/2
+Wed 06 Jun,9:00 AM,00:35,Spanish Listening [F],Edexcel,1SP0 1F
+Wed 06 Jun,9:00 AM,00:45,Spanish Reading [F],Edexcel,1SP0 3F
+Wed 06 Jun,9:00 AM,00:45,Spanish Listening [H],Edexcel,1SP0 1H
+Wed 06 Jun,9:00 AM,01:00,Spanish Reading [H],Edexcel,1SP0 3H
+Wed 06 Jun,9:00 AM,01:15,iMedia Pre-production skills Paper,OCR,R081/01
+Wed 06 Jun,1:00 PM,01:30,Music Written Paper,AQA,8271/W
+Wed 06 Jun,1:00 PM,01:00,Dutch: Reading Paper,OCR,A803/01
+Wed 06 Jun,1:00 PM,01:00,Portuguese: Reading Paper,OCR,A833/01
+Thu 07 Jun,9:00 AM,01:30,Maths Paper 2 Calculator [F],Edexcel,1MA1 2F
+Thu 07 Jun,9:00 AM,01:30,Maths Paper 2 Calculator [H],Edexcel,1MA1 2H
+Fri 08 Jun,9:00 AM,01:45,English Language Paper 2,AQA,8700/2
+Fri 08 Jun,1:00 PM,01:45,History Paper 2,Edexcel,1HI0 25
+Mon 11 Jun,9:00 AM,01:45,Biology Paper 2 [F],AQA,8461/2F
+Mon 11 Jun,9:00 AM,01:45,Biology Paper 2 [H],AQA,8461/2H
+Mon 11 Jun,9:00 AM,01:15,Combined Science Trilogy Biology Paper 2 [F],AQA,8464/B/2F
+Mon 11 Jun,9:00 AM,01:15,Combined Science  Trilogy Biology Paper 2 [H],AQA,8464/B/2H
+Mon 11 Jun,1:00 PM,01:15,Geography Paper 3,AQA,8035/3
+Tue 12 Jun,9:00 AM,01:30,Maths Paper 3 Calculator [F],Edexcel,1MA1 3F
+Tue 12 Jun,9:00 AM,01:30,Maths Paper 3 Calculator [H],Edexcel,1MA1 3H
+Tue 12 Jun,1:00 PM,01:20,History Paper 3,Edexcel,1HI0 31
+Wed 13 Jun,9:00 AM,01:45,Chemistry Paper 2 [F],AQA,8462/2F
+Wed 13 Jun,9:00 AM,01:45,Chemistry Paper 2 [H],AQA,8462/2H
+Wed 13 Jun,9:00 AM,01:15,Combined Science Trilogy Chemistry Paper 2 [F],AQA,8464/C/2F
+Wed 13 Jun,9:00 AM,01:15,Combined Science Trilogy Chemistry Paper 2 [H],AQA,8464/C/2H
+Thu 14 Jun,9:00 AM,01:10,Spanish Writing [F],Edexcel,1SP0 4F
+Thu 14 Jun,9:00 AM,01:20,Spanish Writing [H],Edexcel,1SP0 4H
+Thu 14 Jun,1:00 PM,02:00,Resistant Materials Unit 1,AQA,45601
+Thu 14 Jun,1:00 PM,01:45,Food Preparation & Nutrition Component 1,WJEC,C560UA0-1
+Fri 15 Jun,9:00 AM,01:45,Physics Paper 2 [F],AQA,8463/2F
+Fri 15 Jun,9:00 AM,01:45,Physics Paper 2 [H],AQA,8463/2H
+Fri 15 Jun,9:00 AM,01:15,Combined Science Trilogy Physics Paper 2 [F],AQA,8464/P/2F
+Fri 15 Jun,9:00 AM,01:15,Combined Science Trilogy Physics Paper 2 [H],AQA,8464/P/2H
